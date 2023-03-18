@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+}
+header {
+  background-color: #373738;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+.img {
+  padding: 1%;
+  background-image: url("../imagesjustin/mylogo.png");
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.heroImg {
+  background-color: #ebebeb;
+  padding: 100px 15px;
+}
+.heroImg__image {
+  filter: drop-shadow(0 0 15px rgb(0, 213, 255));
+}
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #ffffff;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+/* UX Skills using CSS Flex */
+.mySkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.skillsImage {
+  display: block;
+  width: 100%;
+}
+
+.skillsDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillsDescription .description {
+  text-align: center;
+}
+
+/* My Work using CSS Grid */
+.myWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionContent {
+  width: 80%;
+}
+
+.project {
+  padding-bottom: 2em;
+}
+
+.projectImage {
+  width: 100%;
+}
+
+.projectImage img {
+  width: 100%;
+  object-fit: cover;
+}
+.gridContainer {
+  height: 100%;
+}
+.workGrid {
+  display: grid;
+  column-gap: 3.333%;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projectDescription {
+  height: 60px;
+}
+
+.viewAllProjects {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.viewAllProjects button {
+  background-color: #008676;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+.viewAllProjects button:hover,
+.viewAllProjects button:active {
+  cursor: pointer;
+  background-color: #00bfa8;
+}
+
+/*Footer CSS */
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flexContainer > * {
+    width: 100%;
+  }
+  .workGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

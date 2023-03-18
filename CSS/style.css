@@ -110,6 +110,7 @@ button {
 
 .projectDescription {
   height: 60px;
+  overflow: hidden;
 }
 
 .viewAllProjects {
@@ -183,6 +184,8 @@ footer li {
   border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
   transition: background-color 0.2s;
   margin-bottom: 2rem;
 }
@@ -198,4 +201,27 @@ footer li {
 
 .sectionHeader {
   font-size: 3rem;
+}
+
+.project_thumbnail {
+  border-radius: 7px;
+}
+
+.hide {
+  display: none;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.projectContent {
+  /* margin-bottom: 2rem; */
+}
+
+.projectCardFooter {
+  width: 100%;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
 }

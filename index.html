@@ -3,6 +3,9 @@
   <head>
     <title>Justin Kwong - UX/UI Researcher and Designer</title>
     <link href="CSS/style.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Signika+Negative&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -17,7 +20,7 @@
     <section class="heroImg">
       <div class="content">
         <img class="heroImg__image" src="imagesjustin/justin-kwong.webp" />
-        <h1>Justin Kwong</h1>
+        <h1 class="sectionHeader">Justin Kwong</h1>
         <p>
           Born and raised in San Francisco and commuted weekly between there and
           Sacramento, Justin’s unusual lifestyle has allowed him to adapt and
@@ -27,133 +30,135 @@
           user. Justin has used this principle to redesign websites and
           brainstorm app concepts to improve user experience.
         </p>
-        <button>Download Resume</button>
+        <button id="scrollToWorksSectionButton" class="viewButton">View all projects</button>
       </div>
     </section>
 
-    <section class="mySkills">
-      <h1>My UX Skills</h1>
-      <div class="flexContainer">
-        <div class="skills">
-          <img class="skillsImage" src="imagesjustin/user_research.png" />
-          <div class="skillsDescription">
-            <h3 class="header">USER RESEARCH</h3>
-            <p class="description">
-              I believe learning from the users is one of the most important
-              aspects of UX. I am proficient in user interviews, usability
-              testing, and understanding user behavior,wants, and needs through
-              observation and task analysis. I typically need a smartphone,
-              laptop, pencil and paper, and Zoom to get these done.
-            </p>
-          </div>
-        </div>
-        <div class="skills">
-          <img class="skillsImage" src="imagesjustin/user_empathy.png" />
-          <div class="skillsDescription">
-            <h3>USER EMPATHY</h3>
-            <p>
-              I want users to have the best UX possible, that can be done by
-              really empathizing with them.I am proficient at creating personas,
-              empathy maps, journey maps, userscenarios, and storyboards which
-              helps me design around my users. After I have conducted many
-              interviews, I typically use Miro, Figma, and Google Spreadsheets
-              to visualize my user empathy.
-            </p>
-          </div>
-        </div>
-        <div class="skills">
-          <img class="skillsImage" src="imagesjustin/user_design.png" />
-          <div class="skillsDescription">
-            <h3>USER DESIGN</h3>
-            <p>
-              After having gathered enough data to pinpoint my users. I can
-              design interfaces based on my users pains and gains. I typically
-              use paper and pencil, Figma, and Miro to create low and high
-              fidelity wireframes as well as user flows. I also have an
-              understanding of HTML/CSS so I design with knowledge of the
-              current capabilities and limitations of code.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="myWork">
-      <h1>My Work</h1>
-      <div class="sectionContent">
-        <div class="gridContainer">
-          <div class="workGrid">
-            <div id="project_one" class="project">
-              <div class="projectImage">
-                <img
-                  class="project_one_thumbnail"
-                  src="imagesjustin/project_one.png"
-                />
-              </div>
-              <div>
-                <h4>GRANUALLY App</h4>
-                <p class="projectDescription">
-                  Designing an app that makes splitting the bill GRANULARLY
-                  easier.(UX/UI Project)
-                </p>
-                <button>View Project</button>
-              </div>
-            </div>
-            <div id="project_two" class="project">
-              <div class="projectImage">
-                <img
-                  class="project_two_thumbnail"
-                  src="imagesjustin/project_two.png"
-                />
-              </div>
-              <div>
-                <h4>City of Carson Redesign</h4>
-                <p class="projectDescription">
-                  Redesigning and overhauling information of the City of Carson
-                    website for desktop and mobile.(UX/UI Project)
-                </p>
-                <button>View Project</button>
-              </div>
-            </div>
-            <div id="project_three" class="project">
-              <div class="projectImage">
-                <img
-                  class="project_three_thumbnail"
-                  src="imagesjustin/project_three.png"
-                />
-              </div>
-              <div>
-                <h4>Friends of SPL Redesign</h4>
-                <p class="projectDescription">
-                  Redesigning and overhauling information of the Friends of Sac
-                  Lib Pub Library website.(UX/UI Project)
-                </p>
-                <button>View Project</button>
-              </div>
-            </div>
-            <div id="project_four" class="project">
-              <div class="projectImage">
-                <img
-                  class="project_three_thumbnail"
-                  src="imagesjustin/project_three.png"
-                />
-              </div>
-              <div>
-                <h4>Friends of SPL Redesign</h4>
-                <p class="projectDescription">
-                  Redesigning and overhauling information of the Friends of Sac
-                  Lib Pub Library website.(UX/UI Project)
-                </p>
-                <button>View Project</button>
-              </div>
+    <div class="galleryContainer">
+      <section class="mySkills">
+        <h1 class="sectionHeader">My UX Skills</h1>
+        <div class="flexContainer">
+          <div class="skills">
+            <img class="skillsImage" src="imagesjustin/user_research.png" />
+            <div class="skillsDescription">
+              <h3 class="header">USER RESEARCH</h3>
+              <p class="description">
+                I believe learning from the users is one of the most important
+                aspects of UX. I am proficient in user interviews, usability
+                testing, and understanding user behavior,wants, and needs through
+                observation and task analysis. I typically need a smartphone,
+                laptop, pencil and paper, and Zoom to get these done.
+              </p>
             </div>
           </div>
-        <div>
-        <div class="viewAllProjects">
-          <button>View all projects</button>
+          <div class="skills">
+            <img class="skillsImage" src="imagesjustin/user_empathy.png" />
+            <div class="skillsDescription">
+              <h3>USER EMPATHY</h3>
+              <p>
+                I want users to have the best UX possible, that can be done by
+                really empathizing with them.I am proficient at creating personas,
+                empathy maps, journey maps, userscenarios, and storyboards which
+                helps me design around my users. After I have conducted many
+                interviews, I typically use Miro, Figma, and Google Spreadsheets
+                to visualize my user empathy.
+              </p>
+            </div>
+          </div>
+          <div class="skills">
+            <img class="skillsImage" src="imagesjustin/user_design.png" />
+            <div class="skillsDescription">
+              <h3>USER DESIGN</h3>
+              <p>
+                After having gathered enough data to pinpoint my users. I can
+                design interfaces based on my users pains and gains. I typically
+                use paper and pencil, Figma, and Miro to create low and high
+                fidelity wireframes as well as user flows. I also have an
+                understanding of HTML/CSS so I design with knowledge of the
+                current capabilities and limitations of code.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+  
+      <section id="myWork" class="myWork">
+        <h1 class="sectionHeader">My Work</h1>
+        <div class="sectionContent">
+          <div class="gridContainer">
+            <div class="workGrid">
+              <div id="project_one" class="project">
+                <div class="projectImage">
+                  <img
+                    class="project_one_thumbnail"
+                    src="imagesjustin/project_one.png"
+                  />
+                </div>
+                <div>
+                  <h4 class="projectHeader">GRANUALLY App</h4>
+                  <p class="projectDescription">
+                    Designing an app that makes splitting the bill GRANULARLY
+                    easier.(UX/UI Project)
+                  </p>
+                  <!-- <button class="viewButton">View Project</button> -->
+                </div>
+              </div>
+              <div id="project_two" class="project">
+                <div class="projectImage">
+                  <img
+                    class="project_two_thumbnail"
+                    src="imagesjustin/project_two.png"
+                  />
+                </div>
+                <div>
+                  <h4 class="projectHeader">City of Carson Redesign</h4>
+                  <p class="projectDescription">
+                    Redesigning and overhauling information of the City of Carson
+                      website for desktop and mobile.(UX/UI Project)
+                  </p>
+                  <button class="viewButton">View Project</button>
+                </div>
+              </div>
+              <div id="project_three" class="project">
+                <div class="projectImage">
+                  <img
+                    class="project_three_thumbnail"
+                    src="imagesjustin/project_three.png"
+                  />
+                </div>
+                <div>
+                  <h4 class="projectHeader">Friends of SPL Redesign</h4>
+                  <p class="projectDescription">
+                    Redesigning and overhauling information of the Friends of Sac
+                    Lib Pub Library website.(UX/UI Project)
+                  </p>
+                  <button class="viewButton">View Project</button>
+                </div>
+              </div>
+              <div id="project_four" class="project">
+                <div class="projectImage">
+                  <img
+                    class="project_three_thumbnail"
+                    src="imagesjustin/project_three.png"
+                  />
+                </div>
+                <div>
+                  <h4 class="projectHeader">Friends of SPL Redesign</h4>
+                  <p class="projectDescription">
+                    Redesigning and overhauling information of the Friends of Sac
+                    Lib Pub Library website.(UX/UI Project)
+                  </p>
+                  <button class="viewButton">View Project</button>
+                </div>
+              </div>
+            </div>
+          <div>
+          <div class="viewAllProjects">
+            <button class="viewButton">View all projects</button>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <footer>
       <ul>
@@ -164,4 +169,6 @@
       </ul>
     </footer>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="js/index.js"></script>
 </html>
